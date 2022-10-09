@@ -13,7 +13,7 @@ class Clue:
         self._woord_match_reeks = []
         self._required_letters = {}
 
-    def woorden_van_juiste_lengte(self):
+    def setup_woorden_van_juiste_lengte(self):
         woordenlijst = set()
         with open(self._woordenboek) as f:
             line = f.readline().strip()

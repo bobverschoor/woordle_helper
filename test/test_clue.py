@@ -14,10 +14,10 @@ class ClueTest(unittest.TestCase):
         self.assertEqual(5, self.clue_5letters._woordlengte)
 
     def test_woordenboek(self):
-        self.clue_6letters.woorden_van_juiste_lengte()
-        self.clue_5letters.woorden_van_juiste_lengte()
-        self.assertEqual(7662, len(self.clue_6letters._woordenlijst))
-        self.assertEqual(3982, len(self.clue_5letters._woordenlijst))
+        self.clue_6letters.setup_woorden_van_juiste_lengte()
+        self.clue_5letters.setup_woorden_van_juiste_lengte()
+        self.assertEqual(13227, len(self.clue_6letters._woordenlijst))
+        self.assertEqual(5879, len(self.clue_5letters._woordenlijst))
         self.assertTrue("flink" in self.clue_5letters.woordenlijst)
 
     def test_forbidden_letters(self):
